@@ -2,15 +2,15 @@ const express = require('express');
 const fs = require('fs');
 const path = require('path');
 
-const app = express();
 const port = 3000;
+const app = express()
 
 // Serve static files from the 'public' folder
 app.use(express.static('public'));
 
 // Endpoint to load files and send to client
 app.get('/load-files', (req, res) => {
-    const directoryPath = path.join(__dirname, 'files'); // Adjust 'files' to your subdirectory
+    const directoryPath = path.join(__dirname, 'articles'); // Adjust 'files' to your subdirectory
     fs.readdir(directoryPath, function (err, files) {
         if (err) {
             return res.status(500).send({
