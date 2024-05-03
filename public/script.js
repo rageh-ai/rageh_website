@@ -1,6 +1,5 @@
 window.onload = function() {
     fetch('/load-files')
-        .then(response => response.json())
         .then(files => {
             const container = document.getElementById('file-container');
             files.forEach(file => {
