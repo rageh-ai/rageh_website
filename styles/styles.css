@@ -1,0 +1,38 @@
+@font-face {
+    font-family: sans-serif ;
+    src: url();
+}
+
+
+body{
+    background-color:#f2f1f1;
+    color: #727272;
+    width: 80vw;
+    margin: auto;
+}
+#intro{
+    margin: auto;
+    width: 50%;
+}
+h1{
+    text-align: center;
+}
+ul{
+    display: block;
+    padding: 0;
+    text-align: center;
+}
+li{
+    display: inline;
+    font-size: larger;
+}
+#articles{
+    padding-left: 5%;
+}
+.sub{
+    padding-left: 5%;
+    margin-top: 2%;
+}
+a{
+    color: #8d8d8f;
+}
