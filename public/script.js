@@ -7,11 +7,11 @@ window.onload = function() {
             files.forEach(file => {
                 const section = document.createElement('section');
                 section.classList.add("sub_articles")
-                let htmlContent = file.content;
+                let htmlContent = new DOMParser().parseFromString(file.content, "text/html").getElementById("intro").textContent;
                 section.innerHTML = `<h3><a href=files/${file.name}>${file.name}</a></h3>`;
                 const description = document.createElement("div");
-                description.classList.add("context");
-                description.innerHTML = `<p> quick desc </p>`
+                description.classList.add("context")
+                description.innerHTML = `<p> ${htmlContent} <a href=files/${file.name}>See more</a> </p>`
                 section.appendChild(description);
                 container.appendChild(section);
             });
