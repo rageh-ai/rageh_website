@@ -1,0 +1,56 @@
+@font-face {
+    font-family: "Naum"; src: url("fonts/NanumGothicCoding-Bold.woff");
+}
+
+:root{
+    --off-white: #f2f1f1;
+    --metallic-gray: #000000;
+    --lighter-gray: #8f8d8d;
+    --font-size-base: 1rem;
+    --font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+    --font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+    --font-size-xl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+    --border-radius: 10px;
+}
+
+body{
+    
+    background-color: var(--off-white);
+    color: var(--metallic-gray);
+    font-family: Naum, sans-serif;
+    font-size: var(--font-size-base);
+}
+
+.nav_list > li, .article-ul > li, .interest_list > li
+{
+    display: inline;
+    padding: 1%;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover{
+    color: var(--lighter-gray);
+}
+.home_content, .articles{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.articles_heading, .article-ul
+{
+    text-align: left;
+}
+
+.searchBar{
+    position: absolute;
+    right: 0;
+    margin-right: 2%;
+}
+.searchBar.open{
+    transform: translateY(0);
+    transition: transform 0.1s;
+}
