@@ -23,10 +23,13 @@ body{
 }
 a{
     color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
 
 }
 a:hover{
-    color: green;
+    color: var(--lighter-gray);
     text-decoration: underline;
 
 }
@@ -40,12 +43,6 @@ a:hover{
     display: inline;
 }
 
-#nav_list a, #interest_list a, #article-ul a{
-    text-decoration: none;
-    color: inherit;
-    padding: 10px 15px;
-    display: inline-block;
-}
 
 #home_content
 {
