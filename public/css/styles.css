@@ -18,6 +18,17 @@ body{
     color: var(--metallic-gray);
     font-family: Naum, sans-serif;
     font-size: var(--font-size-base);
+    width: 80vw;
+    margin: 0 auto;
+}
+a{
+    color: inherit;
+
+}
+a:hover{
+    color: green;
+    text-decoration: underline;
+
 }
 
 #nav_list, #interest_list, #article-ul
@@ -51,11 +62,12 @@ body{
 .articles
 {
     position: relative;
-    left: 10%;
+    left: 5%;
     padding: 10px 15px;
 }
 li p{
-    position: relative;
-    left: 25%;
     font-size: 0.85em;
+}
+h1{
+    text-align: center;
 }

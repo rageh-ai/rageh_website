@@ -1,1 +1,0 @@
-A minimal website for me to share some of my work.
