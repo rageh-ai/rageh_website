@@ -1,0 +1,2 @@
+- Each pair of wires is bidirectional.
+- higher speeds than 10-BASE-T and 100-BASE-T

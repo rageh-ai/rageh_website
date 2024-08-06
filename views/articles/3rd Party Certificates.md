@@ -1,0 +1,2 @@
+
+3rd party certificates often just called certificates, are issued and signed by a trusted [[Certificate Authority.]] These CA's will have their root certificates embedded into major web browsers and operating systems which means any certificate they issue is inherently going to be trusted by that system.
